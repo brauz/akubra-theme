@@ -148,6 +148,8 @@
   </buy-buttons>
 {%- endif -%}
 
+{%- render 'brauz-find-in-store' -%}
+
 {%- unless product.type == 'Gift Cards' or is_bundle == true -%}
   <div class="pdp-additional-buttons">
     <button class="compare-button flex gap-2 justify-center w-full" data-product-handle="{{ product.handle }}">
